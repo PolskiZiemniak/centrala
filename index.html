@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -10,11 +14,31 @@
         <div class="top-bar">
             <h3>Tytuł</h3>
         </div>
+        <div id="sidebar" class="sidebar closed">
+            <div class="sidebar-content">
+                
+            </div>
+        </div>
         <section class="content">
             <div class="container-fluid">
                 <p>Content</p>
             </div>
-        </section>
+        </section>    
+        <div class="bottom-bar">
+            <div class="conteiner-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <a id="home" href="#" title="home"><i class="fa fa-home fs-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center" >
+                        <a id="reload" href="#" title="reload"><i class="fa fa-bars fs-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-12 col-md-4 text-end" >
+                        <a id="menu" href="#" title="menu"><i class="fa fa-refresh fs-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
