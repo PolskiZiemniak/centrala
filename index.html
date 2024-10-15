@@ -11,13 +11,16 @@
 </head>
 <body>
     <main>
-        <div class="top-bar">
-            <h3>Tytuł</h3>
-        </div>
-        <div id="sidebar" class="sidebar closed">
+        <div id="sidebar" class="sidebar closed"></div>
+            <div id="sidebar-top">
+                <p id="sidebar-top-text">Centrala sterowania</p>
+            </div>
             <div class="sidebar-content">
                 
             </div>
+        </div>
+        <div class="top-bar">
+            <h3>Tytuł</h3>
         </div>
         <section class="content">
             <div class="container-fluid">
@@ -31,10 +34,10 @@
                         <a id="home" href="#" title="home"><i class="fa fa-home fs-2x" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-12 col-md-4 text-center" >
-                        <a id="reload" href="#" title="reload"><i class="fa fa-bars fs-2x" aria-hidden="true"></i></a>
+                        <a id="reload" href="#" title="reload"><i class="fa fa-refresh fs-2x" aria-hidden="true"></i></a>
                     </div>
                     <div class="col-12 col-md-4 text-end" >
-                        <a id="menu" href="#" title="menu"><i class="fa fa-refresh fs-2x" aria-hidden="true"></i></a>
+                        <a id="menu" href="#" onclick="showMenu(); return false;" title="menu"><i class="fa fa-bars fs-2x" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

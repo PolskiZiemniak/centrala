@@ -26,3 +26,23 @@
     position: absolute;
     bottom: 0;
 }
+#sidebar{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: cadetblue;
+    transition: 0.5s;
+}
+#sidebar-top{
+    height: 50px;
+    width: 0;
+    position: absolute;
+    background-color: blue;
+    z-index: 3;
+    transition: 0.5s;
+}
+#sidebar-top > p {
+    color: transparent;
+    transition: 0.5s;
+}
