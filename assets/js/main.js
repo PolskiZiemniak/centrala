@@ -20,7 +20,7 @@ $(document).ready(function () {
 });
 
 function createMenu() {
-	$.getJSON('menu.json', function(json) {
+	$.getJSON('data/menu.json', function(json) {
 		var menu = json.menu;
 		htmlMenu = '';
 		for(var i = 0; i < menu.length; i++) {
