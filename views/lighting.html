@@ -1,13 +1,15 @@
+<body>
 <h2>Strona z oświetleniem</h2>
 <div id="lighting">
 	<p>Oświetlenie</p>
 	<br/><button class="btn btn-success">Zmień treść</button><br><br>
-	<form method="post" action="server.php">	
-		<input type="hidden" name="id" value="1">
-		<input type="hidden" name="JSONfile" value="lighting">
-		<input type="text" name="switch" placeholder="Nazwa przełącznika"><br><br>
-		<input type="text" name="status" placeholder="Status (on|off)"><br><br>
-		<input class="btn btn-success" type="submit" value="Zapisz">
-	</form>
+	<form id="lightningForm" method="post">
+        <input type="hidden" name="jsonFile" id="jsonFile" value="lightning">
+        <input type="hidden" name="id" id="id" value="1">
+        Nazwa przełącznika: <input type="text" name="name" id="name" required><br>
+        Status: <input type="text" name="status" id="status" placeholder="on|off" required pattern="on|off"><br><br>
+        <button type="submit" id="send">Wyślij</button>
+    </form>
 </div>
+</body>
 <script src="assets/js/lighting.js"></script>
